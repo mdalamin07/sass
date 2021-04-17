@@ -1,0 +1,135 @@
+@import "color";
+@import "mixin";
+@import "reset";
+
+
+/* Header Area Start */ 
+header{
+    .navbar{
+        padding: 15px 0;
+        background-color: $color_02;
+        .navbar-brand{
+            color: $color_01!important;
+            font-size: 25px;
+            font-weight: bold; 
+        }
+        .navbar-toggler-icon{
+            color: $color_01;
+            font-size: 25px;
+        }
+        .navbar-nav .nav-link{
+            color: $color_01;
+            font-size: 18px;
+            padding: 10px;
+            transition: 0.5s;
+            border-radius: 5px;
+            font-weight: bolder;
+        }
+        .nav-link:hover{
+            color: #fff;
+            background-color: $color_03;
+        }
+    }
+    
+}
+/* Header Area Ends */ 
+
+// Hero Area Start 
+#hero_area img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+// Hero Area Ends 
+
+// About Area Start
+#about_area{
+    .about_head{
+        color: #fff;
+        background-color: $color_01;
+        .container{
+            margin: 150px 0;
+        }
+        h1{
+            @include section_head;
+            margin: 0 30px;
+        }
+        p{
+            @include pera_style;
+            margin: 0 30px;
+        }
+    }
+}
+
+// About Area Ends
+
+// Time Line Area Start
+.inner_time_line{
+    margin: 0 auto;
+    h2{
+        @include section_head;
+        margin: 0 30px;
+    }
+    p{
+        @include pera_style;
+        margin: 0 30px;
+    }
+}
+// Time Line Area Ends
+
+// Service Area Start
+#service_area{
+    background-color: $color_02;
+    h3,h4{
+        @include section_head;
+        color: $color_01;
+    }
+    p{
+        @include pera_style;
+    }
+    i{
+        color: $color_03;
+    }
+}
+
+// Service Area Ends
+// job Area Start
+#job_area{
+    .inner_job{
+        color: #fff;
+        background-color: $color_01;
+    }
+    .container{
+        margin: 150px 0;
+    }
+    h1{
+        @include section_head;
+        margin: 0 30px;
+    }
+    p{
+        @include pera_style;
+        margin: 0 30px;
+    }
+}
+// job Area Ends
+// Contact Area Start
+#contact_area{
+    .contact{
+        background-color: $color_01;
+        input,textarea{
+            color: #fff;
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid $color_02;
+        }
+        button{
+            float: right;
+            color: $color_02;
+            padding: 10px 30px;
+            border-radius: 30px;
+            background-color: $color_03;
+        }
+    }
+}
+// Contact Area Ends
